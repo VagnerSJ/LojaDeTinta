@@ -1,4 +1,3 @@
-
 public class RGB {
 	
 	private int r;
@@ -6,9 +5,9 @@ public class RGB {
 	private int b;
 	
 	public RGB(int r, int g, int b) {
-		setRed(r);
-		setGreen(g);
-		setBlue(b);
+		this.setRed(r);
+		this.setGreen(g);
+		this.setBlue(b);
 	}
 	
 	private void setRed(int r) {

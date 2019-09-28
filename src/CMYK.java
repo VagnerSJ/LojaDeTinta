@@ -7,10 +7,10 @@ public class CMYK {
 	private int k;
 	
 	public CMYK(int c, int m, int y, int k) {
-		setCyan(c);
-		setMagenta(m);
-		setYellow(y);
-		setBlack(k);
+		this.setCyan(c);
+		this.setMagenta(m);
+		this.setYellow(y);
+		this.setBlack(k);
 	}
 	
 	private void setCyan(int c) {

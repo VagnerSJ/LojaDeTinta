@@ -10,9 +10,9 @@ public class Compra {
 	/////////////
 	
 		public Compra(String entrada, int quantidade) {
-			qualCor(entrada);
-			qualQuantidade(quantidade);
-			distanciaRGB();
+			this.qualCor(entrada);
+			this.qualQuantidade(quantidade);
+			this.distanciaRGB();
 			
 		}
 		

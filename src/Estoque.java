@@ -7,10 +7,10 @@ public class Estoque {
 	private double preco;
 	
 	public Estoque(String ID, String nome, int litros, double preco) {
-		setID(ID);
-		setNome(nome);
-		setLitros(litros);
-		setPreco(preco);
+		this.setID(ID);
+		this.setNome(nome);
+		this.setLitros(litros);
+		this.setPreco(preco);
 	}
 	
 	private void setID(String ID) {
