@@ -1,5 +1,6 @@
-import java.util.Locale;
 import java.util.Scanner;
+
+import entidades.Estoque;
 
 public class teste {
 	 
@@ -19,9 +20,13 @@ public class teste {
 	System.out.println(parts[2]);*/
 		
 		
-		String entrada = sc.nextLine();
+		/*String entrada = sc.nextLine();
 		int quantidade = sc.nextInt();
 		
-		Compra compra = new Compra(entrada, quantidade);
+		Compra compra = new Compra(entrada, quantidade);*/
+		Estoque e = new Estoque("CG2A", "Grey", 12, 25.66);
+		
+		System.out.println(e.toString());
+	
 	}
 }

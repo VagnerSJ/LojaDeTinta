@@ -1,3 +1,4 @@
+package entidades;
 
 public class Estoque {
 	
@@ -7,12 +8,17 @@ public class Estoque {
 	private double preco;
 	
 	public Estoque(String ID, String nome, int litros, double preco) {
-		setID(ID);
-		setNome(nome);
-		setLitros(litros);
-		setPreco(preco);
+		this.setID(ID);
+		this.setNome(nome);
+		this.setLitros(litros);
+		this.setPreco(preco);
 	}
 	
+	@Override
+	public String toString() {
+		return "Estoque [ID=" + ID + ", nome=" + nome + ", litros=" + litros + ", preco=" + preco + "]";
+	}
+
 	private void setID(String ID) {
 		this.ID = ID;
 	}

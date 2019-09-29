@@ -1,5 +1,7 @@
 import java.lang.Math;
 
+import entidades.RGB;
+
 public class Compra {
 	
 	private String entrada;
@@ -10,10 +12,9 @@ public class Compra {
 	/////////////
 	
 		public Compra(String entrada, int quantidade) {
-			qualCor(entrada);
-			qualQuantidade(quantidade);
-			distanciaRGB();
-			
+			this.qualCor(entrada);
+			this.qualQuantidade(quantidade);
+			this.distanciaRGB();
 		}
 		
 		private void setEntrada(String entrada) {
@@ -50,11 +51,16 @@ public class Compra {
 			return cor;
 		}
 		
-		private void distanciaRGB() {
+		public double getMenorDistancia() {
+			return 0;
+		}
+		
+		private double distanciaRGB() {
 			RGB cor = converterEntradaParaRGB();
-			double distancia = Math.sqrt(Math.pow((Math.abs(cor.getRed() - r)), 2));
-					 //+ (Math.abs(g - cor.getGreen()) ^ 2) + (Math.abs(b - cor.getBlue()) ^ 2)));
-			
-			System.out.println(distancia);
+			double distancia = Math.sqrt(Math.pow((Math.abs(cor.getRed() - r)), 2)
+							   + Math.pow(Math.abs(cor.getGreen() - g), 2))
+					 		   + Math.pow((Math.abs(cor.getBlue() - b)), 2);
+			//System.out.println(distancia);
+			return distancia; 
 		}
 }

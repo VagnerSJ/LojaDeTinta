@@ -1,14 +1,23 @@
+package entidades;
 
-public class RGB {
+public class RGB extends Pigmentos{
 	
 	private int r;
 	private int g;
 	private int b;
 	
 	public RGB(int r, int g, int b) {
-		setRed(r);
-		setGreen(g);
-		setBlue(b);
+		super();
+		this.setRed(r);
+		this.setGreen(g);
+		this.setBlue(b);
+	}
+
+	public RGB(int estoque, double preco, String id, String nomeFantasia, int r, int g, int b) {
+		super(estoque, preco, id, nomeFantasia);
+		this.setRed(r);
+		this.setGreen(g);
+		this.setBlue(b);
 	}
 	
 	private void setRed(int r) {

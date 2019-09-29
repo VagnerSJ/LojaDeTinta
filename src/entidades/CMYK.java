@@ -1,5 +1,5 @@
-
-public class CMYK {
+package entidades;
+public class CMYK extends Pigmentos{
 	
 	private int c;
 	private int m;
@@ -7,10 +7,19 @@ public class CMYK {
 	private int k;
 	
 	public CMYK(int c, int m, int y, int k) {
-		setCyan(c);
-		setMagenta(m);
-		setYellow(y);
-		setBlack(k);
+		super();
+		this.setCyan(c);
+		this.setMagenta(m);
+		this.setYellow(y);
+		this.setBlack(k);
+	}
+
+	public CMYK(int estoque, double preco, String id, String nomeFantasia, int c, int m, int y, int k) {
+		super(estoque, preco, id, nomeFantasia);
+		this.setCyan(c);
+		this.setMagenta(m);
+		this.setYellow(y);
+		this.setBlack(k);
 	}
 	
 	private void setCyan(int c) {
