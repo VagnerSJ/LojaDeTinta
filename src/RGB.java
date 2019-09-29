@@ -1,11 +1,12 @@
 
-public class RGB {
+public class RGB /*extends Pigmento*/{
 	
 	private int r;
 	private int g;
 	private int b;
 	
-	public RGB(int r, int g, int b) {
+	public RGB(/*String ID, String nome, int estoqueLitros, double preco, */int r, int g, int b) {
+		//super(ID, nome, estoqueLitros, preco);
 		setRed(r);
 		setGreen(g);
 		setBlue(b);
@@ -34,4 +35,9 @@ public class RGB {
 	public int getBlue() {
 		return this.b;
 	}
+	
+	/*@Override
+	public void representacao() {
+		
+	}*/
 }

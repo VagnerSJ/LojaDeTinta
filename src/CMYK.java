@@ -1,12 +1,13 @@
 
-public class CMYK {
+public class CMYK/* extends Pigmento*/{
 	
 	private int c;
 	private int m;
 	private int y;
 	private int k;
 	
-	public CMYK(int c, int m, int y, int k) {
+	public CMYK(/*String ID, String nome, int estoqueLitros, double preco, */int c, int m, int y, int k) {
+		//super(ID, nome, estoqueLitros, preco);
 		setCyan(c);
 		setMagenta(m);
 		setYellow(y);
@@ -44,6 +45,11 @@ public class CMYK {
 	public int getBlack() {
 		return this.k;
 	}
+	
+	/*@Override
+	public void representacao() {
+		
+	}*/
 	
 	
 }
