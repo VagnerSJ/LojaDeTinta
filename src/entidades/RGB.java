@@ -1,10 +1,12 @@
 package entidades;
 
-public class RGB extends Pigmentos{
+public class RGB extends Pigmento{
 	
 	private int r;
 	private int g;
 	private int b;
+	
+	public RGB() {}
 	
 	public RGB(int r, int g, int b) {
 		super();

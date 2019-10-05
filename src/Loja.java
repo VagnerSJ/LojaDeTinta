@@ -1,21 +1,22 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import entidades.Pigmentos;
+import entidades.Pigmento;
 
 public class Loja {
 	
-	private List<Pigmentos> estoque;
+	private List<Pigmento> estoque;
 	
 	public Loja() {
 		this.estoque = new ArrayList<>();
 	}
 	
-	public void addEstoque(Pigmentos estoque) {
+	public void addEstoque(Pigmento estoque) {
 		this.estoque.add(estoque);
 	}
 	
-	public List<Pigmentos> getEstoque(){
+	public List<Pigmento> getEstoque(){
 		return this.estoque;
 	}
+	
 }

@@ -6,6 +6,7 @@ public class Compra {
 	
 	private String entrada;
 	private int quantidade;
+	private Loja produtos; //variavel que vai buscar os pigmentos disponiveis
 	
 	/////////////
 	int r = 255, g = 0, b = 0;
@@ -15,6 +16,7 @@ public class Compra {
 			this.qualCor(entrada);
 			this.qualQuantidade(quantidade);
 			this.distanciaRGB();
+			this.produtos = new Loja();
 		}
 		
 		private void setEntrada(String entrada) {

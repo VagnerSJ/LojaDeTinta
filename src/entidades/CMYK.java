@@ -1,5 +1,5 @@
 package entidades;
-public class CMYK extends Pigmentos{
+public class CMYK extends Pigmento{
 	
 	private int c;
 	private int m;

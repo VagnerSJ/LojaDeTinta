@@ -1,21 +1,21 @@
 package entidades;
 
-public abstract class Pigmentos {
+public abstract class Pigmento {
 	private int estoque;
 	private double preco;
 	private String id;
 	private String nomeFantasia;
 	
-	public Pigmentos(){
+	public Pigmento(){
 	}
 	
-	public Pigmentos(int estoque, double preco, String id, String nomeFantasia) {
+	public Pigmento(int estoque, double preco, String id, String nomeFantasia) {
 		this.setEstoque(estoque);
 		this.setPreco(preco);
 		this.setId(id);
 		this.setNomeFantasia(nomeFantasia);
 	}
-
+	
 	public int getEstoque() {
 		return estoque;
 	}
@@ -32,20 +32,28 @@ public abstract class Pigmentos {
 		return nomeFantasia;
 	}
 
-	private void setEstoque(int estoque) {
+	public void setEstoque(int estoque) {
 		this.estoque = estoque;
 	}
 
-	private void setPreco(double preco) {
+	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 
-	private void setId(String id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	private void setNomeFantasia(String nomeFantasia) {
+	public void setNomeFantasia(String nomeFantasia) {
 		this.nomeFantasia = nomeFantasia;
 	}
+
+	@Override
+	public String toString() {
+		return "Pigmento [estoque=" + estoque + ", preco=" + preco + ", id=" + id + ", nomeFantasia=" + nomeFantasia
+				+ "]";
+	}
+	
+	
 	
 }
